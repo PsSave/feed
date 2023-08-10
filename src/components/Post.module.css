@@ -1,0 +1,109 @@
+.post {
+  background-color: var(--gray-800);
+  
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.post + .post {
+  margin-top: 2rem;
+
+}
+.post > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post > header time {
+  font-size: 0.857rem;
+  color: var(--gray-400);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: .94rem;
+  border: 4px solid var(--gray-800);
+  outline: 1px solid var(--green-500);
+  box-sizing: initial;
+} 
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+.authorInfo strong {
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+.authorInfo span {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.content {
+  line-height: 1.6;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  margin-top: 1rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--green-300);
+  font-weight: bold;
+}
+
+.commentForms {
+  border-top: 1px solid var(--gray-400);
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.commentForms > strong {
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--gray-100);
+}
+
+.commentForms textarea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: var(--gray-900);
+  color: var(--gray-400);
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  
+}
+
+.commentForms button[type=submit] {
+  border-radius: 8px;
+  color: white;
+  background: var(--green-500);
+  border: 0;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  
+  transition: background-color .5s;
+}
+.commentForms button[type=submit]:hover {
+  background-color: var(--green-300);
+}
