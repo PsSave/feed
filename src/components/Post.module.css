@@ -104,6 +104,16 @@
   
   transition: background-color .5s;
 }
+
+.commentForms footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForms:focus-within footer{
+  visibility: visible;
+  max-height: none;
+}
 .commentForms button[type=submit]:hover {
   background-color: var(--green-300);
 }

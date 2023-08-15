@@ -1,0 +1,87 @@
+.comment {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.comment > img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+}
+
+.commentBox {
+  flex: 1;
+}
+
+.commentContent {
+  background: var(--gray-700);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.commentContent header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.commentContent header button{
+  background: transparent;
+  color: var(--gray-400);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  line-height: 0;
+}
+.commentContent header button:hover {
+  color: var(--red-500);
+}
+.commentContent header button:focus {
+  box-shadow: 0 0 0 1px var(--red-500);
+}
+
+
+.author strong {
+  display: block;
+  font-size: 0.957rem;
+  line-height: 1.6;
+}
+.author time {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.commentContent p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.like {
+  margin-top: 0.875rem;
+}
+
+.like button {
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.like button:hover {
+  color: var(--green-300);
+}
+.like button svg {
+  margin-right: .5rem;
+
+}
+
+.like button span::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
